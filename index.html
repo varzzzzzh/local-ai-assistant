@@ -1,0 +1,25 @@
+
+<body>
+  <div id="app">
+    <div id="loading-container">
+      <p id="status-text">AI is preparing...</p>
+      <progress id="loading-bar" value="0" max="1" style="width: 100%"></progress>
+    </div>
+
+    <div id="editor-container" style="display: none;">
+      <h2> Privacy AI Notepad</h2>
+      <textarea id="notepad" placeholder="Paste your messy notes here..."></textarea>
+      
+      <div style="margin-top: 10px;">
+        <button id="summarize-btn"> Summarize</button>
+      </div>
+
+      <div id="ai-response" style="margin-top: 20px; background: #333; color: white; padding: 15px; border-radius: 8px; text-align: left;">
+        <strong>AI Result:</strong>
+        <p id="output-text">Your summary will appear here...</p>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/main.js"></script>
+</body>
